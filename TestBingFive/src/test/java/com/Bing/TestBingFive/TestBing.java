@@ -22,24 +22,23 @@ public class TestBing {
 
 	RemoteWebDriver RemoteDriver;
 
+
 	@Test()
 	public void Test1() {
 		RemoteDriver.get("http://www.bing.com/");
 
-		WebElement Logotip = RemoteDriver.findElement(By.xpath("//div[@class='hp_sw_logo hpcLogoWhite']"));
-		Assert.assertTrue(Logotip.isDisplayed(), "Логотип сайта не отображается");
+		WebElement Logotip = (new WebDriverWait(RemoteDriver, 10))
+				.until(ExpectedConditions.visibilityOf(RemoteDriver.findElement(By.xpath("//div[@class='hp_sw_logo hpcLogoWhite']"))));
 
 		WebElement ButtonSearch = (new WebDriverWait(RemoteDriver, 10)).until(
 				ExpectedConditions.visibilityOf(RemoteDriver.findElement(By.xpath("//input[@id='sb_form_go']"))));
-		Assert.assertTrue(ButtonSearch.isDisplayed(), "Кнопка для поиска запросов не отображается");
 	}
 
 	@Test(dataProvider = "Select", dependsOnMethods = "Test1")
 	public void Test2(String Select) {
 
-		WebElement FieldInput = (new WebDriverWait(RemoteDriver, 5))
+		WebElement FieldInput = (new WebDriverWait(RemoteDriver, 10))
 				.until(ExpectedConditions.visibilityOf(RemoteDriver.findElement(By.xpath("//input[@id='sb_form_q']"))));
-		Assert.assertTrue(FieldInput.isDisplayed(), "Поле для ввода запросов не отображается");
 		FieldInput.sendKeys(Select);
 
 		List<WebElement> ListSelect = (new WebDriverWait(RemoteDriver, 10))
@@ -53,7 +52,7 @@ public class TestBing {
 				ListSelect.clear();
 				break;
 			}
-			case "robots": {
+			case "car tesla": {
 				ListSelect.get(i).click();
 				Parsing();
 				ListSelect.clear();
@@ -93,12 +92,14 @@ public class TestBing {
 
 	@DataProvider
 	public Object[][] Select() {
-		return new Object[][] { { "automatio" }, { "robot" } };
+		return new Object[][] { { "automatio" }, { "car tesl" } };
 	}
 
 	@BeforeTest
 	@Parameters({ "Browser" })
 	public void beforeTest(String Browser) {
+
+		
 		switch (Browser) {
 		case "Firefox": {
 			try {

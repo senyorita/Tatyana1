@@ -2,20 +2,20 @@
 <testng-results skipped="0" failed="0" total="3" passed="3">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="97333" started-at="2016-12-25T14:08:07Z" finished-at="2016-12-25T14:09:45Z">
+  <suite name="Default suite" duration-ms="104163" started-at="2016-12-25T16:16:20Z" finished-at="2016-12-25T16:18:04Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="97333" started-at="2016-12-25T14:08:07Z" finished-at="2016-12-25T14:09:45Z">
+    <test name="Default test" duration-ms="104163" started-at="2016-12-25T16:16:20Z" finished-at="2016-12-25T16:18:04Z">
       <class name="com.Bing.TestBingFive.TestBing">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.Bing.TestBingFive.TestBing@5e5792a0]" name="beforeTest" is-config="true" duration-ms="3623" started-at="2016-12-25T16:08:07Z" finished-at="2016-12-25T16:08:11Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.Bing.TestBingFive.TestBing@5e5792a0]" name="beforeTest" is-config="true" duration-ms="3598" started-at="2016-12-25T18:16:20Z" finished-at="2016-12-25T18:16:24Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="Test1()[pri:0, instance:com.Bing.TestBingFive.TestBing@5e5792a0]" name="Test1" duration-ms="1263" started-at="2016-12-25T16:08:11Z" finished-at="2016-12-25T16:08:12Z">
+        <test-method status="PASS" signature="Test1()[pri:0, instance:com.Bing.TestBingFive.TestBing@5e5792a0]" name="Test1" duration-ms="1185" started-at="2016-12-25T18:16:24Z" finished-at="2016-12-25T18:16:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test1 -->
-        <test-method status="PASS" signature="Test2(java.lang.String)[pri:0, instance:com.Bing.TestBingFive.TestBing@5e5792a0]" name="Test2" duration-ms="54974" started-at="2016-12-25T16:08:12Z" data-provider="Select" depends-on-methods="com.Bing.TestBingFive.TestBing.Test1" finished-at="2016-12-25T16:09:07Z">
+        <test-method status="PASS" signature="Test2(java.lang.String)[pri:0, instance:com.Bing.TestBingFive.TestBing@5e5792a0]" name="Test2" duration-ms="60446" started-at="2016-12-25T18:16:25Z" data-provider="Select" depends-on-methods="com.Bing.TestBingFive.TestBing.Test1" finished-at="2016-12-25T18:17:25Z">
           <params>
             <param index="0">
               <value>
@@ -26,7 +26,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test2 -->
-        <test-method status="PASS" signature="Test2(java.lang.String)[pri:0, instance:com.Bing.TestBingFive.TestBing@5e5792a0]" name="Test2" duration-ms="36277" started-at="2016-12-25T16:09:07Z" data-provider="Select" depends-on-methods="com.Bing.TestBingFive.TestBing.Test1" finished-at="2016-12-25T16:09:43Z">
+        <test-method status="PASS" signature="Test2(java.lang.String)[pri:0, instance:com.Bing.TestBingFive.TestBing@5e5792a0]" name="Test2" duration-ms="37763" started-at="2016-12-25T18:17:25Z" data-provider="Select" depends-on-methods="com.Bing.TestBingFive.TestBing.Test1" finished-at="2016-12-25T18:18:03Z">
           <params>
             <param index="0">
               <value>
@@ -37,7 +37,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Test2 -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.Bing.TestBingFive.TestBing@5e5792a0]" name="afterTest" is-config="true" duration-ms="1175" started-at="2016-12-25T16:09:43Z" finished-at="2016-12-25T16:09:45Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.Bing.TestBingFive.TestBing@5e5792a0]" name="afterTest" is-config="true" duration-ms="1154" started-at="2016-12-25T18:18:03Z" finished-at="2016-12-25T18:18:04Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
