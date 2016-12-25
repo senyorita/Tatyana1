@@ -1,0 +1,20 @@
+<suite name="Suite" parallel="tests" thread-count="3" verbose="1">
+	<test name="Test1">
+		<parameter name="Browser" value="Firefox" />
+		<classes>
+			<class name="com.Bing.TestBingFive.TestBing" />
+		</classes>
+	</test>
+	<test name="Test2">
+		<parameter name="Browser" value="Chrome" />
+		<classes>
+			<class name="com.Bing.TestBingFive.TestBing" />
+		</classes>
+	</test>
+	<test name="Test3">
+		<parameter name="Browser" value="Android" />
+		<classes>
+			<class name="com.Bing.TestBingFive.TestBing" />
+		</classes>
+	</test>
+</suite>
