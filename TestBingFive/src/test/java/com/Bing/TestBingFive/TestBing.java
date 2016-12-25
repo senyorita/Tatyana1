@@ -53,7 +53,7 @@ public class TestBing {
 				ListSelect.clear();
 				break;
 			}
-			case "car tesla": {
+			case "robots": {
 				ListSelect.get(i).click();
 				Parsing();
 				ListSelect.clear();
@@ -93,7 +93,7 @@ public class TestBing {
 
 	@DataProvider
 	public Object[][] Select() {
-		return new Object[][] { { "automatio" }, { "car tesl" } };
+		return new Object[][] { { "automatio" }, { "robot" } };
 	}
 
 	@BeforeTest
